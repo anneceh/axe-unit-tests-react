@@ -13,7 +13,7 @@
     "axe"
   ],
   "author": "Cecilie Haugstvedt",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/anneceh/axe-unit-tests.git"
