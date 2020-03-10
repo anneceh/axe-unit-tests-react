@@ -11,12 +11,12 @@ describe ('Testing UI with axe', function() {
 
   it('should not have accessibility errors in element', function (done) {
       var n = document.getElementById('div1');
+      var results = 0;
       axe.run(n, {}, function (error, result) {
           if (result.violations.length > 0) {
-              var results = JSON.stringify(result.violations, null, 4);
+            results = JSON.stringify(result.violations, ['id', 'impact', 'tags', 'description', 'help', 'helpUrl'], 4);
           }
           expect(results).toEqual(0);
-          expect(result.violations.length).toBe(0);
           done();
       });
   });
