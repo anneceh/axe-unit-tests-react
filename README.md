@@ -8,5 +8,8 @@ This example demonstrates how to write unit tests with aXe-core
 * cd into the project catalog: `cd axe-unit-tests`
 * Install dependencies with `npm install`
 
+## To view the app under test ##
+* Run app with `npm start`
+
 ## To run the example ##
 * Run tests with `npm test`
